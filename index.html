@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <h1>LA DOLCE VITA</h1>
+      <div class="nav-links">
+        <li class="hideOnMobile"><a href="#section-1">HOME</a></li>
+        <li class="hideOnMobile"><a href="#container-1">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#menu-container">MENU</a></li>
+        <li class="hideOnMobile"><a href="#reserve-table">RESERVE</a></li>
+        <li class="hideOnMobile"><a href="#review-block">REVIEW</a></li>
+        <li class="showSidebar menu-btn">
+          <img src="img/menu.svg" alt="menu-icon" />
+        </li>
+      </div>
+
+      <div class="sidebar">
+        <li class="closebtn"><img src="img/close.svg" alt="close-icon" /></li>
+        <li><a href="#section-1">HOME</a></li>
+        <li><a href="#container-1">ABOUT</a></li>
+        <li><a href="#menu-container">MENU</a></li>
+        <li><a href="#reserve-table">RESERVE</a></li>
+        <li><a href="#review-block">REVIEW</a></li>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main-section">
+      <section id="section-1">
+        <!-- section-1 firstSide-container -->
+        <div class="firstSide-container">
+          <h1>LA DOLCE VITA</h1>
+          <h2>
+            Bringing the
+            <p>
+              heart of <span style="color: rgb(142, 56, 19)"> italy</span> to
+            </p>
+            <p>your table.</p>
+          </h2>
+          <p class="description">
+            No 1 best italian restaurant in New York City.
+          </p>
+
+          <div class="btn">
+            <a href="/"><button class="btn-1">Reserve a table</button></a>
+            <a href="#container-2"
+              ><button class="btn-2">View our Menu</button></a
+            >
+          </div>
+        </div>
+        <!--  section-1 secondSide-container -->
+        <div class="secondSide-container">
+          <div class="main-img"></div>
+        </div>
+      </section>
+
+      <!-- section-2 -->
+      <section class="section-2">
+        <div id="container-1">
+          <div class="cheers-img">
+            <div class="side-img"></div>
+          </div>
+          <div class="about-container">
+            <h3>ABOUT US</h3>
+            <p class="side-discription">
+              At <span style="color: rgb(142, 56, 19)">la dolce vita</span>.we
+              bring the warmth and flavors of Italy straight to your table.
+              Founded on family traditions and a passion for authentic Italian
+              cuisine, our restaurant is a haven for food lovers. From the
+              hand-rolled pasta to freshly baked bread, every dish is cratted
+              with love, using only the freshest ingredients. Come for the food,
+              stay for the experience- its always la dolce vita with us!
+            </p>
+          </div>
+        </div>
+
+        <!-- section-2  menu-container  -->
+        <div id="menu-container">
+          <div class="title">
+            <h3>THE DISH SPOTLIGHT</h3>
+            <!-- <span class="underline"></span> -->
+          </div>
+          <div class="flex-box">
+            <div class="items">
+              <div class="dish-img1"></div>
+              <h4>APPETIZER</h4>
+              <p>Bruschetta at Pomodoro</p>
+            </div>
+            <div class="items">
+              <div class="dish-img2"></div>
+              <h4>MAIN DISH</h4>
+              <p>Spaghetti Bolognese</p>
+            </div>
+            <div class="items">
+              <div class="dish-img3"></div>
+              <h4>DESSERT</h4>
+              <p>Ricotta cheesecake</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-3  reserve-container-->
+      <section class="section-3">
+        <section id="reserve-table">
+          <div class="food-img">
+            <p>
+              Spend your evening with us while we give you the <br />
+              finest experience.
+            </p>
+            <button class="reserve-btn">Reserve a table</button>
+          </div>
+        </section>
+
+        <!-- section-3 review-container -->
+        <section id="review-block">
+          <div class="parent-review">
+            <div class="title-block">
+              <h4>Leave us a review.</h4>
+              <!-- <span class="line"></span> -->
+            </div>
+
+            <section class="review-container">
+              <div class="review-info">
+                <p>We <span>love </span>to hear from you.</p>
+                <form action="/" id="contact-form">
+                  <div class="info-block">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="name-input"
+                      required
+                    />
+                    <label>How was your experience</label>
+                    <textarea name="message" id="messsage" required></textarea>
+
+                    <div class="star-rating">
+                      <label>Rating</label>
+                      <br />
+                      <button type="button" name="rating 1" class="star">
+                        &#9734;
+                      </button>
+                      <button type="button" name="rating 2" class="star">
+                        &#9734;
+                      </button>
+                      <button type="button" name="rating 3" class="star">
+                        &#9734;
+                      </button>
+                      <button type="button" name="rating 4" class="star">
+                        &#9734;
+                      </button>
+                      <button type="button" name="rating 5" class="star">
+                        &#9734;
+                      </button>
+
+                      <input type="hidden" name="rating" id="rating-value" />
+                    </div>
+
+                    <button type="submit" name="submit" class="submit-input">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="Review-img">
+                <div class="chef-image"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+      <!-- footer -->
+      <div class="footer-block">
+        <footer>Adedejijohn@copyright 2025</footer>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
