@@ -2,7 +2,6 @@ const showSideBar = document.querySelector(".showSidebar");
 const sidebar = document.querySelector(".sidebar");
 const closeBtn = document.querySelector(".closebtn");
 const body = document.querySelector("body");
-// const allStars = document.querySelectorAll(".star");
 
 document.querySelectorAll(".sidebar li").forEach((link) => {
   link.addEventListener("click", () => {
@@ -12,25 +11,11 @@ document.querySelectorAll(".sidebar li").forEach((link) => {
 });
 
 showSideBar.addEventListener("click", () => {
-  // scrollPosition = window.scrollY;
-
   sidebar.style.display = "flex";
-  // body.style.position = "fixed";
-  // body.style.top = `-${scrollPosition}px`;
-  // body.style.left = "0";
-  // body.style.right = "relative";
-  // body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", () => {
   sidebar.style.display = "none";
-  // body.style.position = "";
-  // body.style.top = "";
-  // body.style.left = "";
-  // body.style.right = "";
-  // body.style.overflow = "";
-
-  // window.scrollTo(0, scrollPosition);
 });
 
 // emailjs
@@ -81,9 +66,6 @@ window.onload = function () {
     );
   });
 };
-
-// star-rating
-// const allStars = document.querySelectorAll("rating-value");
 
 const allStars = document.querySelectorAll(".star");
 const ratingInput = document.getElementById("rating-value");
