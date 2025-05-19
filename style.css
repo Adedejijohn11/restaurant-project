@@ -121,6 +121,10 @@ html {
   font-style: italic;
 }
 
+.main-section #section-1 .firstSide-container h2 span {
+  color: rgb(142, 56, 19);
+}
+
 .main-section #section-1 .firstSide-container .description {
   color: rgb(65, 65, 65);
   /* margin-top: 0; */
@@ -218,6 +222,10 @@ html {
   width: 28vw;
   height: 80vh;
   font-size: 31px;
+}
+
+.section-2 #container-1 .about-container .side-discription span {
+  color: rgb(142, 56, 19);
 }
 
 /* section-2  menu-container */
