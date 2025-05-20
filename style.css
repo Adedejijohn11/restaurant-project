@@ -636,6 +636,7 @@ html {
     height: 65vh;
     width: 85vw;
     margin-top: 10px;
+    padding-left: 0;
     margin-left: 0;
     text-align: center;
   }
@@ -680,7 +681,6 @@ html {
   .secondSide-container .main-img {
     height: 45vh;
     width: 90vw;
-    box-shadow: 15px 10px 8px rgba(76, 73, 73, 0.5);
   }
 
   /* section-2  cheers-img and about-container*/
@@ -847,10 +847,11 @@ html {
     .review-container
     .review-info
     .info-block
-    .star-rating {
-    user-select: none;
-    margin-top: 30px;
-    width: 220px;
+    .star {
+    font-size: 25px;
+    color: white;
+    background-color: unset;
+    border: none;
   }
 
   .section-3
@@ -860,9 +861,9 @@ html {
     .review-info
     .info-block
     .submit-input {
-    width: 70px;
+    width: 20vw;
     height: 5vh;
-    margin-left: 130px;
+    margin-top: 20px;
   }
 
   .section-3 #review-block .parent-review .Review-img .chef-image {
@@ -876,10 +877,21 @@ html {
     padding: 20px 100px;
   }
 
+  /* section-1 secondSide-container */
+  .secondSide-container .main-img {
+    height: 35vh;
+    width: 90vw;
+  }
+
   /* section-2  cheers-img and about-container*/
   .section-2 #container-1 .about-container .side-discription {
     font-size: 12px;
     padding: 0 10px;
+  }
+
+  .section-3 #reserve-table .food-img p {
+    font-size: 15px;
+    width: 280px;
   }
 
   /*section-3 review-container*/
@@ -890,8 +902,6 @@ html {
     .review-info
     .info-block
     .submit-input {
-    width: 70px;
-    height: 5vh;
     margin-left: 85px;
   }
 }
