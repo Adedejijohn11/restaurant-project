@@ -171,6 +171,7 @@ html {
   width: 50vw;
   height: 90.5vh;
 }
+
 .secondSide-container .main-img {
   background-image: url(img/main-resize.jpg);
   height: 90.5vh;
@@ -532,9 +533,18 @@ html {
 
   /* main-section section-1 firstSide-container */
 
+  .main-section #section-1 {
+    margin-top: 70px;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   .main-section #section-1 .firstSide-container {
     padding-left: 30px;
-    width: 50vw;
+    width: 100%;
+    /* background-color: aqua; */
   }
 
   .main-section #section-1 .firstSide-container h2 {
@@ -553,14 +563,20 @@ html {
   /* section-1 secondSide-container */
   .secondSide-container {
     height: 85vh;
-    width: 50vw;
+    width: 100%;
     margin-top: 0;
   }
 
   .secondSide-container .main-img {
     height: 85vh;
-    width: 50vw;
+    width: 100%;
   }
+
+  /* 
+  .secondSide-container {
+    width: 50vw;
+    height: 90.5vh;
+  } */
 
   /* section-2  cheers-img and about-container*/
   .section-2 #container-1 {
@@ -618,7 +634,7 @@ html {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   /* navbar */
   .navbar {
     height: 8vh;
