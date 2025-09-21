@@ -537,14 +537,11 @@ html {
     margin-top: 70px;
     height: 100%;
     width: auto;
-    display: flex;
-    flex-direction: column;
   }
 
   .main-section #section-1 .firstSide-container {
     padding-left: 30px;
     width: 100%;
-    /* background-color: aqua; */
   }
 
   .main-section #section-1 .firstSide-container h2 {
